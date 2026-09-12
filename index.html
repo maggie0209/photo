@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>翻頁相簿</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Page-Flip CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/page-flip/dist/js/page-flip.browser.js"></script>
+</head>
+<body>
+
+  <div class="container">
+    <div id="book" class="flip-book">
+      <!-- 封面 -->
+      <div class="page page-cover">
+        <h2>My Album</h2>
+      </div>
+
+      <!-- 相片頁面 -->
+      <div class="page">
+        <img src="https://picsum.photos/400/600?random=1" alt="Photo 1">
+      </div>
+      <div class="page">
+        <img src="https://picsum.photos/400/600?random=2" alt="Photo 2">
+      </div>
+      <div class="page">
+        <img src="https://picsum.photos/400/600?random=3" alt="Photo 3">
+      </div>
+      <div class="page">
+        <img src="https://picsum.photos/400/600?random=4" alt="Photo 4">
+      </div>
+
+      <!-- 封底 -->
+      <div class="page page-cover">
+        <h2>The End</h2>
+      </div>
+    </div>
+
+    <!-- 控制按鈕 -->
+    <div class="controls">
+      <button id="prev-btn">上一頁</button>
+      <button id="next-btn">下一頁</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
