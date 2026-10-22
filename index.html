@@ -91,6 +91,7 @@
         const front=document.createElement('div');front.className='turn-face turn-front';
         const frontImg=document.createElement('img');frontImg.src=photos[forward?n:old].src;frontImg.alt='';front.appendChild(frontImg);decorateImage(frontImg);
         const back=document.createElement('div');back.className='turn-face turn-back';
+        const backImg=document.createElement('img');backImg.src=photos[n].src;backImg.alt='';back.appendChild(backImg);decorateImage(backImg);
         sheet.append(front,back);book.appendChild(sheet);$('prevBtn').disabled=true;$('nextBtn').disabled=true;
         sheet.addEventListener('animationend',()=>{index=n;sheet.remove();isTurning=false;render()},{once:true});
       }
